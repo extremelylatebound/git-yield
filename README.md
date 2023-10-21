@@ -1,2 +1,2 @@
-# git-yield
+# git-yield ⚠️
 yield when merging
