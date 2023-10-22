@@ -47,3 +47,20 @@ Then you will get the message: "All clear - no conflicts detected."
 ```
 
 It has not been made robust to deal with alternate scenarios or provide elegant error messaging.
+
+---
+**Examples**
+
+```
+$ git yield -b featureWithConflicts
+
+🚨 The following branches have conflicts with featureWithConflicts:
+- featureA
+- bugC
+```
+```
+$ git yield -b featureWithoutConflicts
+
+✅ All clear - no conflicts detected.
+
+```
