@@ -1,4 +1,4 @@
-# git-yield ⚠️ - fixing long-lived feature branches
+# git-yield ⚠️ - combining the benefits of trunk-based development with long-lived feature branching
 [Link to repo](https://github.com/extremelylatebound/git-yield/)
 
 Git Yield is a small utility, less than 100 LOC, that gives you the benefits of trunk-based development while using long-lived feature branches.
