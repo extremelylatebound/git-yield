@@ -16,7 +16,7 @@ Git Yield is designed to work with git's branching feature while enabling transp
 
 Deps: [Deno](https://deno.com/)
 
-Git yield should be run on your pipeline every time you push your branch to origin. The utility is really just a pattern of checking the head of other branches for conflicts:
+Git yield should be run on your pipeline every time you push your branch commits to origin. The utility is really just a pattern of checking the head of other branches for conflicts:
 
 1. Fetch origin
 2. Iterate branches running `$git merge --abort`
