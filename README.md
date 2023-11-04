@@ -1,4 +1,4 @@
-# git-yield ⚠️ - combining the benefits of trunk-based development with long-lived feature branching
+# git-yield ⚠️ - combining the benefits of trunk-based development with your branching strategy of choice
 [Link to repo](https://github.com/extremelylatebound/git-yield/)
 
 Git Yield is a small utility, less than 100 LOC, that gives you the benefits of trunk-based development while using long-lived feature branches.
@@ -14,7 +14,7 @@ Git Yield is designed to work with git's branching feature while enabling transp
 ---
 **How it works**
 
-The concept is simple: instead of waiting for batched commits to `main` to act as the point of integration where branches check for conflict, every push to origin checks every other origin's head commit for conflicts. This increases transparency in the same manner as trunk-based development, but without requiring `main` or "trunk" to be the bellwether. You can use your standard long-lived feature branches, and if there's going to be a problem, you'll find out when you push your commits to origin at your convencience.
+The concept is simple: instead of waiting for batched commits to `main` to act as the point of integration where branches check for conflict, every push to origin checks every other branch's head commit for conflicts. This increases transparency in the same manner as trunk-based development, but without requiring `main` or "trunk" to be the bellwether. You can use your branching strategy of choice, and if there's going to be a problem, you'll find out when you push your commits to origin at your convencience.
 
 Git yield should be run on your pipeline every time you push your branch commits to origin. The utility is really just a pattern of checking the head of other branches for conflicts:
 
