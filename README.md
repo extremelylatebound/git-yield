@@ -14,7 +14,7 @@ Git Yield is designed to work with git's branching feature while enabling transp
 ---
 **How it works**
 
-Deps: [Deno](https://deno.com/)
+The concept is simple: instead of waiting for batched commits to `main` to act as the drumbeat where branches check for conflict, every push to origin checks every other origin's head commit for conflicts. This increases transparency in the same manner as trunk-based development, but without requiring `main` or "trunk" to be the bellwether. You can use your standard long-lived feature branches, and if there's going to be a problem, you'll find out when you push your commits to origin at your convencience.
 
 Git yield should be run on your pipeline every time you push your branch commits to origin. The utility is really just a pattern of checking the head of other branches for conflicts:
 
@@ -27,6 +27,8 @@ If the data structure is not empty - fail the pipeline and alert your team with 
 The utility was created to provide two primary benefits:
 1. A simple data structure to capture the conflicts and report status.
 2. A binary (run `$deno compile --allow-all git-yield.ts`) that extends git and can be dropped into your CI/CD pipeline.
+
+Deps: [Deno](https://deno.com/)
 
 ---
 **Caveats**
